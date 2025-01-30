@@ -17,5 +17,5 @@ close_prices.columns = ['SOITEC', 'NVDA']
 
 
 # Plotting using plotly-express for interactivity
-fig = px.line(close_prices, title='Stock Price Comparison: Soitec SA (SOIT) vs Nvidia (NVDA) aka Jean yves chart', labels={'value':'Closing Price', 'index': 'Date'})
+fig = px.line(close_prices, title='Stock Price Comparison: Soitec SA (SOIT) vs Nvidia (NVDA) aka Jean Yves chart', labels={'value':'Closing Price', 'index': 'Date'})
 st.plotly_chart(fig)
