@@ -9,7 +9,7 @@ import plotly.express as px
 tickers = ['SOI.PA', 'NVDA']
 
 # Fetch data for the past 20 years from today
-data = yf.download(tickers, start="2018-01-01")
+data = yf.download(tickers, start="2022-01-01")
 
 # Extract closing prices
 close_prices = data['Close']
