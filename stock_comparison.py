@@ -9,7 +9,7 @@ import plotly.express as px
 tickers = ['SOI.PA', 'NVDA']
 
 # Fetch data for the past 20 years from today
-data = yf.download(tickers, start="2003-01-01")
+data = yf.download(tickers, start="2018-01-01")
 
 # Extract closing prices
 close_prices = data['Close']
@@ -17,5 +17,5 @@ close_prices.columns = ['SOITEC', 'NVDA']
 
 
 # Plotting using plotly-express for interactivity
-fig = px.line(close_prices, title='Stock Price Comparison: Soitec SA (SOIT) vs Nvidia (NVDA) aka Jean Yves chart', labels={'value':'Closing Price', 'index': 'Date'})
+fig = px.line(close_prices, title='Jean Yves Chart: Soitec SA (SOI) vs Nvidia (NVDA)', labels={'value':'Closing Price', 'index': 'Date'})
 st.plotly_chart(fig)
