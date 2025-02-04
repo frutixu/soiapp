@@ -23,7 +23,7 @@ else:
     close_prices = get_data(selected_companies)
     
     # Plotting using plotly-express for interactivity
-    fig = px.line(close_prices, title='Branch2 Jean Yves Chart: Company Comparison', labels={'value': 'Closing Price', 'index': 'Date'})
+    fig = px.line(close_prices, title='Le Jean Yves Chart: SOI et le reste', labels={'value': 'Closing Price', 'index': 'Date'})
     st.plotly_chart(fig)
 
 # Add a button to compare the selected companies with pre-defined tickers
