@@ -17,7 +17,7 @@ close_prices = get_data(all_tickers)
 #Main title of the page
 st.title('Le Jean Yves Chart: SOI et le reste')
 
-£#Display a dropdown to select companies for comparison
+#Display a dropdown to select companies for comparison
 selected_companies = st.multiselect('Select Companies', all_tickers, default=all_tickers[:2])
 if not selected_companies:
 st.error("Please select at least one company to compare.")
