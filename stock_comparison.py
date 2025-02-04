@@ -14,6 +14,9 @@ def get_data(tickers):
 # Fetch and process the data
 close_prices = get_data(all_tickers)
 
+# Main title of the page
+st.title('Jean Yves Chart')
+
 # Display a dropdown to select companies for comparison
 selected_companies = st.multiselect('Select Companies', all_tickers, default=all_tickers[:2])
 if not selected_companies:
