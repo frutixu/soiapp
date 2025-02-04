@@ -25,8 +25,3 @@ else:
     # Plotting using plotly-express for interactivity
     fig = px.line(close_prices, title='Le Jean Yves Chart: SOI et le reste', labels={'value': 'Closing Price', 'index': 'Date'})
     st.plotly_chart(fig)
-
-# Add a button to compare the selected companies with pre-defined tickers
-if st.button('Compare Selected Companies'):
-    # You can now use the selected_companies list to compare with predefined tickers like MSFT, AAPL, BTC-USD, ATOS
-    st.write(f'You selected to compare: {", ".join(selected_companies)}')
