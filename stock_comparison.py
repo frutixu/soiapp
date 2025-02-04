@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Define the tickers for Soitec, Nvidia, MSFT, AAPL, BTC, and ATOS
-all_tickers = ['SOI.PA', 'NVDA', 'MSFT', 'AAPL', 'BTC-USD', 'ATOS']
+all_tickers = ['SOI.PA', 'NVDA', 'MSFT', 'AAPL', 'ATOS']
 
 # Function to fetch data for the past 20 years from today
 def get_data(tickers):
