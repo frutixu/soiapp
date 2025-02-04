@@ -15,7 +15,7 @@ def get_data(tickers):
 close_prices = get_data(all_tickers)
 
 # Main title of the page
-st.title('Jean Yves Chart')
+st.title('Le Jean Yves Chart: SOI et le reste')
 
 # Display a dropdown to select companies for comparison
 selected_companies = st.multiselect('Select Companies', all_tickers, default=all_tickers[:2])
@@ -26,5 +26,5 @@ else:
     close_prices = get_data(selected_companies)
     
     # Plotting using plotly-express for interactivity
-    fig = px.line(close_prices, title='Le Jean Yves Chart: SOI et le reste', labels={'value': 'Closing Price', 'index': 'Date'})
+    fig = px.line(close_prices, labels={'value': 'Closing Price', 'index': 'Date'})
     st.plotly_chart(fig)
